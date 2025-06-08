@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="{{ url_for('static', filename='profile.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#journey">My Journey</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Me!" class="profile-photo" width="150">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm <span style="color:red;">Mae ❤️</span>, also known as <strong>quinnn_</strong> in the tech community. I'm a self-taught cybersecurity enthusiast from the Philippines, currently working overseas while building the foundation of my future in technology. 
+                <br><br>
+                With no formal IT background or degree, I began this journey fueled by pure determination, long study nights, and hands-on practice. I’m currently focused on learning Blue Team skills like log analysis, SIEM (Splunk), and network fundamentals through platforms like TryHackMe, HackTheBox and real-world labs. 
+                <br><br>
+                I created this website not just to showcase my projects, but to share my growth publicly — from lash/nail technician to future cybersecurity analyst. I believe that with the right mindset, strong work ethic, and daily commitment to learning, anyone can break into tech — including me. 
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>🛡️ Splunk Log Analysis:</strong> Used Splunk to detect failed login attempts in a Linux system.</li>
+                <li><strong>👨‍💻 TryHackMe Labs:</strong> Completed rooms on networking, Linux, and attack simulation.</li>
+                <li><strong>🔐 SIEM & SSH Hardening:</strong> Built a SIEM lab and hardened a Linux box.</li>
+                <li><strong>💻 This Portfolio:</strong> Designed and hosted on Netlify as a project hub and personal brand.</li>
+            </ul>
+        </section>
+
+        <section id="journey">
+            <h2>📘 My Learning Journey</h2>
+            <p>
+                Every day, I study cybersecurity and web development through structured roadmaps — networking, Linux, SIEM, and attack simulations.
+                <br><br>
+                I’m focused on hands-on learning via TryHackMe, HackTheBox, and CTF platforms. I will document every step — wins, struggles, and breakthroughs — right here.
+                <br><br>
+                My goal is to land my first cybersecurity job based on my skills, proof-of-work, and passion — not a degree. I plan to earn certifications too, but real skills come first.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: it.s.quinnn28@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/ma-quinnn" target="_blank">View My GitHub</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>@ 2025 Mae | quinnn_</p>
+    </footer>
+</body>
+</html>
